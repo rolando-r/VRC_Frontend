@@ -1,0 +1,70 @@
+/* Ninguna de las imagenes son de mi propiedad, a continuación están los links de los autores
+
+Imágenes en Unsplash: https://unsplash.com/@xps
+Logo Dell: https://worldvectorlogo.com/logo/dell-1
+
+*/
+
+:root {
+    --dark: #16191C;
+    --dark-x: #1E2126; 
+    --light: #ffffff;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    color: var(--light);
+}
+
+.text-light { color: var(--light) !important; }
+.bg-dark { background-color: var(--dark) !important; }
+.bg-dark-x { background-color: var(--dark-x); }
+
+.btn {
+    min-height: 3.125rem;
+    font-weight: 600;
+}
+
+.form-control {
+    min-height: 3.125rem;
+    line-height: initial;
+}
+.form-control:focus {
+    background-color: var(--dark-x);
+    outline: none;
+}
+
+.logo {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+
+}
+
+/* Cambiar el color de fondo del botón */
+.btn-primary {
+    background-color: #ff0000;
+}
+
+  /* Cambiar el color del texto del botón */
+.btn-primary {
+    color: #ffffff;
+}
+
+  /* Cambiar el color de fondo cuando el botón está activo o se le da clic */
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+    background-color: #ff2e2e;
+    border-color: #ff1f1f;
+}
+
+.btn-primary{
+    border-color: #ff1f1f;
+}
+
+.esteban{
+    display: block;
+    text-align: start;
+}
