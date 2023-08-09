@@ -64,7 +64,8 @@ body {
     border-color: #ff1f1f;
 }
 
-.esteban{
-    display: block;
-    text-align: start;
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

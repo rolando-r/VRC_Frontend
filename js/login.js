@@ -24,7 +24,6 @@ $('.back').click(function(e){
 });
 
 
-
 $('.regTag').click(function(e){
     e.preventDefault();
     $('.formBox').removeClass('level-reg-revers');
