@@ -5,103 +5,210 @@
     <meta charset="UTF-8">
     <title>VRC 🏁</title>
     <link rel="stylesheet" href="/css/navBar.css">
+    <script src="/js/navBar.js" defer></script>
+    <script src="/js/jquery-3.6.4.slim.js" defer></script>
+    <script src="/js/bootstrap/bootstrap.min.js" defer></script>
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
-  <div class="sidebar">
-    <div class="logo-details">
-      <i><img class="icon vehicle" src="/imgs/logo.png"></i>
-        <div class="logo_name"></div>
-        <i class='bx bx-menu' id="btn" ></i>
-    </div>
-    <ul class="nav-list">
-      <li>
-          <i class='bx bx-search' ></i>
-         <input type="text" placeholder="Buscar...">
-         <span class="tooltip">Buscar</span>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-car'></i>
-          <span class="links_name">Vehiculo</span>
-        </a>
-         <span class="tooltip">Vehiculo</span>
-      </li>
-      <li>
-       <a href="#">
-         <i class='bx bx-user' ></i>
-         <span class="links_name">Usuario</span>
-       </a>
-       <span class="tooltip">Usuario</span>
-     </li>
-     <li>
-       <a href="#">
-         <i class='bx bx-map' ></i>
-         <span class="links_name">Sucursales</span>
-       </a>
-       <span class="tooltip">Sucursales</span>
-     </li>
-     <li>
-       <a href="#">
-         <i class='bx bx-cart-alt' ></i>
-         <span class="links_name">Productos</span>
-       </a>
-       <span class="tooltip">Productos</span>
-     </li>
-     <li>
-       <a href="#">
-         <i class='bx bxs-user-detail' ></i>
-         <span class="links_name">Personal</span>
-       </a>
-       <span class="tooltip">Personal</span>
-     </li>
-     <li>
-       <a href="#">
-         <i class='bx bx-cog' ></i>
-         <span class="links_name">Ajustes</span>
-       </a>
-       <span class="tooltip">Ajustes</span>
-     </li>
-     <li class="profile">
-         <div class="profile-details">
-           <img src="/imgs/icon.png" alt="profileImg">
-           <div class="name_job">
-             <div class="name">Rolando Rodriguez</div>
-             <div class="job">Web designer</div>
-           </div>
-         </div>
-         <a href="/login.html"><i class='bx bx-log-out' id="log_out" ></i></a>
-     </li>
-    </ul>
+<div class="sidebar">
+  <div class="logo-details">
+    <i><img class="icon vehicle" src="/imgs/logo.png"></i>
+      <div class="logo_name"></div>
+      <i class='bx bx-menu' id="btn" ></i>
   </div>
-  <section class="home-section">
-      <div class="text">Dashboard</div>
+  <ul class="nav-list">
+    <li>
+        <i class='bx bx-search' ></i>
+        <input type="text" placeholder="Buscar...">
+        <span class="tooltip">Buscar</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-car'></i>
+        <span class="links_name">Vehiculo</span>
+      </a>
+        <span class="tooltip">Vehiculo</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-user' ></i>
+        <span class="links_name">Usuario</span>
+      </a>
+      <span class="tooltip">Usuario</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-map' ></i>
+        <span class="links_name">Sucursales</span>
+      </a>
+      <span class="tooltip">Sucursales</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-cart-alt' ></i>
+        <span class="links_name">Productos</span>
+      </a>
+      <span class="tooltip">Productos</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bxs-user-detail' ></i>
+        <span class="links_name">Personal</span>
+      </a>
+      <span class="tooltip">Personal</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-cog' ></i>
+        <span class="links_name">Ajustes</span>
+      </a>
+      <span class="tooltip">Ajustes</span>
+    </li>
+    <li class="profile">
+        <div class="profile-details">
+          <img src="/imgs/icon.png" alt="profileImg">
+          <div class="name_job">
+            <div class="name">Rolando Rodriguez</div>
+            <div class="job">Web designer</div>
+          </div>
+        </div>
+        <a href="/login.html"><i class='bx bx-log-out' id="log_out" ></i></a>
+    </li>
+  </ul>
+</div>
+  <div>
+  <section>
+    <div class="contenedor">
+      <h1 class="logo"><span class="nombre-empresa">Registro</span></h1>
+      <div class="wrapper animated bounceInLeft">
+        <div class="info-empresa">
+          <h3>Nuevo vehiculo</h3>
+          <!-- <ul class="servicios">
+            <li><i class="fa fa-map-marker"></i> Calle Cualquiera, 44. 88880. Ciudad (Provincia)</li>
+            <li><i class="fa fa-mobile"></i> 555 555 000</li>
+            <li><i class="fa fa-envelope"></i> info@empresa.com</li>
+          </ul> -->
+        </div>
+        <div class="contacto">
+          <h3>Datos del cliente</h3>
+          <form class="formulario">
+            <p class="full">
+              <label>Id</label>
+              <input type="text" name="idCliente" required>
+            </p>
+            <p>
+              <label>Nombre</label>
+              <input type="text" name="nombre" required>
+            </p>
+            <p>
+              <label>Direccion</label>
+              <input type="text" name="direccion">
+            </p>
+            <p class="full">
+              <label>Correo</label>
+              <input type="email" name="email" required>
+            </p>
+            <p>
+              <label>Nro Fijo</label>
+              <input type="text" name="nroFijo" required>
+            </p>
+            <p>
+              <label>Nro Movil</label>
+              <input type="text" name="nroMovil" required>
+            </p>
+          </form>
+            <!---------------------------------------------------------->
+            <h3>Datos del vehiculo</h3><br>
+          <form class="formulario">
+            <p>
+              <label>Placa</label>
+              <input type="text" name="placa" required>
+            </p>
+            <p>
+              <label>Marca</label>
+              <input type="text" name="marca" required>
+            </p>
+            <p>
+              <label>Modelo</label>
+              <input type="text" name="modelo">
+            </p>
+            <p>
+              <label>Color</label>
+              <input type="text" name="Color" required>
+            </p>
+            <p>
+              <label>Kilometros</label>
+              <input type="text" name="kilometros" required>
+            </p><br>
+          </form>
+            <!---------------------------------------------------------->
+            <h3>Inspeccion Vehiculo</h3>
+          <form class="formulario">
+            <p class="full">
+              <label>Id</label>
+              <input type="text" name="idCliente" required>
+            </p>
+            <p>
+              <label>Nombre</label>
+              <input type="text" name="nombre" required>
+            </p>
+            <p>
+              <label>Direccion</label>
+              <input type="text" name="direccion">
+            </p>
+            <p class="full">
+              <label>Correo</label>
+              <input type="email" name="email" required>
+            </p>
+            <p>
+              <label>Nro Fijo</label>
+              <input type="text" name="nroFijo" required>
+            </p>
+            <p>
+              <label>Nro Movil</label>
+              <input type="text" name="nroMovil" required>
+            </p>
+          </form>
+            <!---------------------------------------------------------->
+            <h3>Diagnostico Cliente</h3>
+          <form class="formulario">
+            <p class="full">
+              <label>Descripcion</label>
+              <input type="text" name="descripcion" required>
+            </p>
+          </form>
+            <!---------------------------------------------------------->
+            <h3>Personal Responsable</h3>
+          <form class="formulario">
+            <p class="full">
+              <label>Id</label>
+              <input type="text" name="idEmpleado" required>
+            </p>
+            <p>
+              <label>Nombre</label>
+              <input type="text" name="nombre" required>
+            </p>
+            <p>
+              <label>Especialidad</label>
+              <input type="text" name="especialidad">
+            </p>
+            <p>
+              <label>Nro Fijo</label>
+              <input type="text" name="nroFijo" required>
+            </p>
+            <p>
+              <label>Nro Movil</label>
+              <input type="text" name="nroMovil" required>
+            </p>
+          </form>
+        </div>
+        
+      </div>
+    </div>
   </section>
-  <script>
-  let sidebar = document.querySelector(".sidebar");
-  let closeBtn = document.querySelector("#btn");
-  let searchBtn = document.querySelector(".bx-search");
-
-  closeBtn.addEventListener("click", ()=>{
-    sidebar.classList.toggle("open");
-    menuBtnChange();//calling the function(optional)
-  });
-
-  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
-    sidebar.classList.toggle("open");
-    menuBtnChange(); //calling the function(optional)
-  });
-
-  // following are the code to change sidebar button(optional)
-  function menuBtnChange() {
-   if(sidebar.classList.contains("open")){
-     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
-   }else {
-     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
-   }
-  }
-  </script>
+  </div>
 </body>
 </html>
